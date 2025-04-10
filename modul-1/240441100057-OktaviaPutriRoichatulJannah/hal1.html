@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+        .nav { 
+            text-align: center; 
+        } 
+        .nav a { 
+            color: #0073e6; 
+            padding: 5px 20px; 
+            font-size: 14px; 
+            margin: 5px;  
+            border-radius: 5px;
+            background-color: #e3f2fd; 
+            transition: 0.3s; 
+            text-decoration: none;
+        }
+        .nav a:hover { 
+            background-color:cornflowerblue; 
+            color: white; 
+        }
+        .title-container {
+            text-align: center;
+        }
+        h1 {
+            background-color: cornflowerblue;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center; 
+        }
+        h2 {
+            color: cornflowerblue;
+        }
+        table {
+            width: 100%; 
+            border-collapse: collapse;
+            text-align: left;
+        }
+        th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            background-color: cornflowerblue;
+            color: white;
+        }
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            border: none;
+        }
+        .submit-btn {
+            background-color: cornflowerblue;
+            color: white;
+        }
+        .reset-btn {
+            background-color: crimson;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="title-container">
+        <h1>Profil Pribadi</h1>
+    </div>
+
+    <div class="nav">
+        <a href="hal1.html">🏠 Profil Pribadi</a>
+        <a href="hal2.html">📖 Pengalaman</a>
+        <a href="hal3.html">✍️ Blog/Catatan Pribadi</a>
+    </div>
+
+    <h2>Informasi Pribadi</h2>
+    <table >
+        <tr>
+            <th>Nama</th>
+            <td>Oktavia Putri RJ</td>
+        </tr>
+        <tr>
+            <th>Alamat</th>
+            <td>Mulyoagung-Singgahan-Tuban</td>
+        </tr>
+        <tr>
+            <th>TTL</th>
+            <td>Tuban, 11 Oktober 2005</td>
+        </tr>
+        <tr>
+            <th>Nomor HP</th>
+            <td>085233058202</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>oktaviaputrirj@gmail.com</td>
+        </tr>
+    </table>
+
+    <h2 >Riwayat Pendidikan</h2>
+    <ul>
+        <li><b>SDN Mulyoagung 01</b> (2012-2018)</li>
+        <li><b>SMPN 1 Singgahan</b> (2018-2021)</li>
+        <li><b>MA Matholi'ul Anwar</b> (2021-2024)</li>
+        <li><b>Universitas Trunojoyo Madura</b> (2024-Sekarang)</li>
+    </ul>
+
+    <h2 >Hobi dan Minat</h2>
+    <ul>
+        <li><b>📚 Membaca Buku</b> - Menambah wawasan dan imajinasi dengan membaca buku.</li>
+        <li><b>✍️ Menggambar</b> - Menyalurkan kreativitas dengan menggambar.</li>
+        <li><b>🍳 Memasak</b> - Mencoba berbagai resep masakan.</li>
+    </ul>
+
+    <h2 >Pengalaman</h2>
+    <ul>
+        <li><b>Anggota Divisi Minat dan Bakat - IKMARO</b>  
+            <br>Berkontribusi dalam pengembangan bakat dan kreativitas mahasiswa daerah dalam bidang seni, olahraga, dan keterampilan lainnya (2024-Sekarang).</li>
+    </ul>
+
+    <h2 >Kesan & Harapan</h2>
+    <p>Masuk ke <b>Universitas Trunojoyo Madura</b>, khususnya di <b>Program Studi Sistem Informasi</b>, memberikan kesan yang beragam. 
+        Awalnya ada rasa canggung menghadapi lingkungan baru, mata kuliah yang menantang, dan teman-teman yang belum dikenal. 
+        Namun, seiring waktu, rasa penasaran dan semangat belajar semakin tumbuh, terutama dalam memahami bagaimana teknologi dan sistem informasi bekerja dalam berbagai aspek kehidupan.
+    </p>
+    <p>Saya memiliki cita-cita menjadi seorang yang bekerja di bidang teknologi yang mampu menciptakan solusi inovatif. Dunia teknologi yang terus berkembang selalu menarik perhatian, terutama bagaimana informasi dapat diolah dan dimanfaatkan secara efektif. 
+        Harapannya, selain menyelesaikan studi dengan baik, juga bisa mengembangkan keterampilan melalui pengalaman nyata dan kolaborasi dengan banyak pihak. Dengan begitu, ilmu yang didapat tidak hanya bermanfaat bagi diri sendiri, tetapi juga bisa memberikan dampak positif bagi banyak orang.
+    </p>
+
+    <h2>Form Keahlian Teknologi</h2>
+    <form>
+        <div>
+            <label for="bahasa_program">Bahasa Pemrograman yang Dikuasai:</label><br>
+            <input type="text" id="bahasa_program" name="bahasa_program" placeholder="Contoh: Python, Java, C++" required>
+        </div>
+    
+        <br>
+    
+        <div>
+            <label for="bahasa_asing">Bahasa Asing yang Bisa Digunakan:</label><br>
+            <input type="text" id="bahasa_asing" name="bahasa_asing" placeholder="Contoh: Inggris, Jepang, Mandarin" required>
+        </div>
+        <br>
+    
+        <div>
+            <label>Perangkat Lunak yang Sering Digunakan:</label><br>
+            <input type="checkbox" id="vs_code" name="software" value="VS Code">
+            <label for="vs_code">VS Code</label><br>
+    
+            <input type="checkbox" id="android_studio" name="software" value="Android Studio">
+            <label for="android_studio">Android Studio</label><br>
+    
+            <input type="checkbox" id="figma" name="software" value="Figma">
+            <label for="figma">Figma</label><br>
+    
+            <input type="checkbox" id="photoshop" name="software" value="Photoshop">
+            <label for="photoshop">Adobe Photoshop</label>
+        </div>
+    
+        <br>
+    
+        <div>
+            <label>Sistem Operasi yang Biasa Digunakan:</label><br>
+            <input type="radio" id="windows" name="sistem_operasi" value="Windows">
+            <label for="windows">Windows</label>
+    
+            <input type="radio" id="macos" name="sistem_operasi" value="MacOS">
+            <label for="macos">MacOS</label>
+    
+            <input type="radio" id="linux" name="sistem_operasi" value="Linux">
+            <label for="linux">Linux</label>
+        </div>
+    
+        <br>
+
+        <div class="button-container">
+            <button type="submit" class="submit-btn">Kirim</button>
+            <button type="reset" class="reset-btn">Reset</button>
+        </div>
+    </form>
+</body>
+
+</html>
