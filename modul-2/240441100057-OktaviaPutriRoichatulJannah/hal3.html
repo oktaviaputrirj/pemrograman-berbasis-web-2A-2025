@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pesan - Umai Ramen</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<bod>
+
+    <header>
+        <div class="header-container">
+            <h1>Umai Ramen</h1>
+            <nav>
+                <a href="hal1.html">Home</a>
+                <a href="hal2.html">Menu</a>
+                <a href="hal3.html">Pesan</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="order-section">
+        <h2>Pesan Menu Umai Ramen</h2>
+
+        <form>
+        <label for="name">Nama Pemesan:</label>
+        <input type="text" id="name" name="name" class="input-field" placeholder="Masukkan nama Anda" required>
+
+        <label for="phone">Nomor Telepon:</label>
+        <input type="tel" id="phone" name="phone" class="input-field" placeholder="Masukkan nomor telepon Anda" required>
+
+        <label for="menu">Menu yang Ingin Dipesan:</label>
+        <input type="text" id="menu" name="menu" class="input-field" placeholder="Masukkan menu yang ingin dipesan (misalnya: Tonkotsu Ramen, Teh Hijau)" required>
+
+        <label>Metode Pembayaran:</label>
+        <div class="radio-group">
+            <label>
+            <input type="radio" id="credit-card" name="payment" value="credit-card" required>
+            Kartu Kredit/Debit
+            </label>
+            <label>
+            <input type="radio" id="bank-transfer" name="payment" value="bank-transfer">
+            Transfer Bank
+            </label>
+            <label>
+            <input type="radio" id="e-wallet" name="payment" value="e-wallet">
+            E-Wallet
+            </label>
+            <label>
+            <input type="radio" id="cash-on-delivery" name="payment" value="cash-on-delivery">
+            Bayar di Tempat (COD)
+            </label>
+        </div>
+        
+        <label for="notes">Catatan Tambahan:</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Masukkan catatan tambahan (jika ada)"></textarea>
+
+        <button type="submit" class="button">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
