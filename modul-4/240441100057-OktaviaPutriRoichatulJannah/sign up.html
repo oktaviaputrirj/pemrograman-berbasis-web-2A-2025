@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - ByteAcademy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col md:flex-row">
+
+  <!-- Sisi Kiri (Illustration) -->
+  <div class="w-1/2 md:flex items-center justify-center bg-purple-800">
+    <img src="Gambar 5.png" alt="Ilustrasi Belajar" class="max-w-xl">
+  </div>
+
+  <!-- Sisi Kanan (Form) -->
+  <div class="md:w-1/2 flex flex-col justify-center items-center px-8 py-16">
+    <div>
+      <!-- Logo -->
+      <div class="flex items-center space-x-2 mb-6">
+        <img src="logo.png" alt="Logo ByteAcademy" class="max-w-[225px]">
+      </div>
+      <!-- Head Liner -->
+      <h2 class="text-2xl font-semibold mb-3">Mulai Hari Ini</h2>
+      <p class="text-md text-gray-500 mb-6">Menunggu besok? Bisa jadi kamu takkan pernah mulai.</p>
+
+      <!-- Form -->
+      <form id="myForm" class="space-y-4 mb-8" onsubmit="return">
+        <div>
+          <label class="block font-semibold text-sm text-gray-700 mb-2">Alamat Email</label>
+          <input id="email" type="text" placeholder="Masukkan Alamat Email Anda"
+            class="md:w-3/4 text-sm border border-gray-300 rounded-full px-4 py-2 outline-none focus:ring-2 focus:ring-purple-500" required/>
+        </div>
+        <div>
+          <label class="block font-semibold text-sm text-gray-700 mb-2">Nama Lengkap</label>
+          <input id="nama" type="text" placeholder="Masukkan Nama Lengkap Anda"
+            class="md:w-3/4 text-sm border border-gray-300 rounded-full px-4 py-2 outline-none focus:ring-2 focus:ring-purple-500" required/>
+        </div>
+        <div>
+          <label class="block font-semibold text-sm text-gray-700 mb-2">Password</label>
+          <input id="password" type="text" placeholder="Masukkan Password Anda"
+            class="md:w-3/4 text-sm border border-gray-300 rounded-full px-4 py-2 outline-none focus:ring-2 focus:ring-purple-500" required/>
+        </div>
+
+        <div>
+          <button type="submit" class="md:w-3/4 font-semibold bg-purple-600 text-white py-2 rounded-full hover:bg-purple-700 transition">
+            Sign Up
+          </button>
+        </div>
+      </form>
+
+      <button class="md:w-3/4 font-semibold flex items-center justify-center border border-gray-300 rounded-full mt-6 py-2 hover:bg-gray-100 transition">
+        <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google" class="mr-2">
+        Sign Up with Google
+      </button>
+    </div>
+  </div>
+
+
+  <script>
+ 
+    const email = document.getElementById("email");
+    const nama = document.getElementById("nama");
+    const password = document.getElementById("password")
+ 
+
+    email.addEventListener("input", () => {
+      const value = email.value.trim();
+      if (value === "") {
+        email.setCustomValidity("Email tidak boleh kosong.");
+      } else if (!email.value.includes("@")) {
+        email.setCustomValidity("Email harus mengandung '@'.");
+      } else {
+        email.setCustomValidity("");
+      }
+    });
+
+    nama.addEventListener("input", () => {
+      const value = nama.value.trim();
+      if (value === "") {
+        nama.setCustomValidity("Nama tidak boleh kosong.");
+      } else if (value.length < 3) {
+        nama.setCustomValidity("Nama harus terdiri dari minimal 3 huruf.");
+      } else {
+        nama.setCustomValidity(""); 
+      }
+    });
+
+    password.addEventListener("input", () => {
+      const value = password.value.trim();
+      if (value === "") {
+        password.setCustomValidity("Password tidak boleh kosong.");
+      } else if (value.length < 6) {
+        password.setCustomValidity("Password harus terdiri dari minimal 6 karakter.");
+      } else {
+        password.setCustomValidity("");
+      }
+    });
+      
+
+    form.addEventListener("submit", function (e) {
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        form.reportValidity();
+      }
+    });
+  </script>
+
+</body>
+</html>
